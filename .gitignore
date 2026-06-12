@@ -1,0 +1,33 @@
+# Root build artifacts
+/FundTracker/
+build_output.txt
+
+# Flutter/Dart related (in case commands are run at root)
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+build/
+
+# Android related
+**/android/**/generated/
+**/android/captures/
+**/android/gradle/
+**/android/key.properties
+**/*.keystore
+**/*.jks
+
+# IDE related
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

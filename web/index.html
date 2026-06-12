@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MF Tracker - Private & Secure Mutual Funds Portfolio Tracker</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Mutual Funds Tracker (MF Tracker) - A secure, anonymous way to track your mutual fund investments using Google Drive for private storage. Download from Indus Appstore.">
+  <meta name="keywords" content="mutual funds, tracker, privacy, secure portfolio, google drive sync, finance manager, indus appstore">
+  <meta name="author" content="SoftwareTestingPro">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MF Tracker - Private Mutual Funds Portfolio Tracker">
+  <meta property="og:description" content="Track your mutual fund portfolio securely and anonymously. Your data stays in your Google Drive. No signup, no tracking.">
+  <meta property="og:image" content="../Image1.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="../favicon.png" alt="MF Tracker Logo" class="logo-img">
+        <span>MF <span class="text-gradient">Tracker</span></span>
+      </a>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-it-works" class="nav-link">How it Works</a>
+        <a href="#calculator" class="nav-link">Calculator</a>
+        <a href="https://github.com/SoftwareTestingPro/mftracker" target="_blank" class="nav-link"><i class="fab fa-github"></i> GitHub</a>
+        <a href="#download" class="btn btn-primary btn-sm">Download APK</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="badge">Android Exclusive</div>
+        <h1 class="hero-title">Your Mutual Funds.<br>Securely Tracked.<br><span class="text-gradient">Privately Yours.</span></h1>
+        <p class="hero-subtitle">
+          A fully private, serverless tracker. Your data is stored directly in your own Google Drive. No third-party servers, no account registration, complete anonymity.
+        </p>
+        
+        <div class="cta-group">
+          <!-- Custom Indus Appstore Download Badge -->
+          <a href="#download" class="download-badge-indus">
+            <div class="indus-icon">
+              <i class="fas fa-download"></i>
+            </div>
+            <div class="indus-text">
+              <span class="indus-sub">DOWNLOAD FROM</span>
+              <span class="indus-main">Indus Appstore</span>
+            </div>
+          </a>
+          <a href="https://github.com/SoftwareTestingPro/mftracker/releases" target="_blank" class="btn btn-secondary">
+            <i class="fab fa-android"></i> Direct APK
+          </a>
+        </div>
+
+        <div class="hero-bullets">
+          <div class="bullet-item">
+            <i class="fas fa-shield-halved text-gradient"></i>
+            <span>Google Drive Private Storage</span>
+          </div>
+          <div class="bullet-item">
+            <i class="fas fa-user-secret text-gradient"></i>
+            <span>100% Anonymous & Secure</span>
+          </div>
+          <div class="bullet-item">
+            <i class="fas fa-chart-line text-gradient"></i>
+            <span>Interactive Portfolio Analytics</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Phone Mockup -->
+      <div class="hero-mockup">
+        <div class="phone-frame">
+          <div class="phone-speaker"></div>
+          <div class="phone-screen">
+            <div class="phone-status-bar">
+              <span class="time">12:30</span>
+              <div class="icons">
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-battery-three-quarters"></i>
+              </div>
+            </div>
+            
+            <!-- Screenshot Slider -->
+            <div class="slider-container">
+              <div class="slider" id="screenshot-slider">
+                <img src="../Image1.png" alt="MF Tracker Dashboard" class="slide active">
+                <img src="../Image2.png" alt="Portfolio Analysis" class="slide">
+                <img src="../Image3.png" alt="Investment List" class="slide">
+                <img src="../Image4.png" alt="Performance Chart" class="slide">
+                <img src="../Image5.png" alt="Fund Details" class="slide">
+                <img src="../Image6.png" alt="Transaction History" class="slide">
+                <img src="../Image7.png" alt="Google Drive Sync" class="slide">
+                <img src="../Image8.png" alt="Security Settings" class="slide">
+              </div>
+            </div>
+
+            <!-- Slide Overlay Navigation -->
+            <button class="slider-btn prev" id="slider-prev" aria-label="Previous Screenshot"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next" id="slider-next" aria-label="Next Screenshot"><i class="fas fa-chevron-right"></i></button>
+            
+            <div class="slider-dots" id="slider-dots">
+              <!-- JS will inject dots dynamically -->
+            </div>
+          </div>
+          <div class="phone-home-bar"></div>
+        </div>
+        <div class="phone-reflection"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="section-header">
+      <div class="badge">Key Benefits</div>
+      <h2>Designed for Privacy & Simplicity</h2>
+      <p>MF Tracker puts you in absolute control of your financial data without exposing details to anyone else.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <i class="fas fa-hard-drive"></i>
+        </div>
+        <h3>Google Drive Storage</h3>
+        <p>Your data is stored in your private Google Drive AppData folder. It's secure, backup-ready, and entirely inaccessible by us or anyone else.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <i class="fas fa-eye-slash"></i>
+        </div>
+        <h3>True Anonymity</h3>
+        <p>No email log-in, no registration, and no user profiling. We don't collect, track, or share any metrics about your wealth.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <i class="fas fa-chart-pie"></i>
+        </div>
+        <h3>Advanced Analytics</h3>
+        <p>Visualize your equity, debt, and hybrid fund distributions. Dynamic charts update instantly to reflect your portfolio health.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <i class="fas fa-cloud-arrow-up"></i>
+        </div>
+        <h3>Instant Cloud Sync</h3>
+        <p>Easily restore or synchronize your investments across multiple Android devices using your authenticated Google account.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive How it Works / Google Drive Sync Animation -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="section-header">
+      <div class="badge">Architecture</div>
+      <h2>How the Sync Works</h2>
+      <p>See how your data safely travels directly between your device and Google Drive.</p>
+    </div>
+
+    <div class="sync-container">
+      <div class="sync-node device">
+        <div class="node-icon"><i class="fas fa-mobile-screen-button"></i></div>
+        <span>Your Device</span>
+      </div>
+      
+      <div class="sync-flow">
+        <div class="flow-line"></div>
+        <div class="flow-packets" id="flow-packets">
+          <i class="fas fa-lock data-packet"></i>
+          <i class="fas fa-lock data-packet"></i>
+        </div>
+      </div>
+      
+      <div class="sync-node drive">
+        <div class="node-icon"><i class="fab fa-google-drive"></i></div>
+        <span>Google Drive (Private AppData)</span>
+      </div>
+    </div>
+    
+    <div class="sync-explanation">
+      <p><i class="fas fa-shield"></i> All sync requests communicate directly with Google Drive APIs. No proxy or middleman servers are ever involved.</p>
+    </div>
+  </section>
+
+  <!-- Interactive SIP & Growth Calculator -->
+  <section class="calculator-section" id="calculator">
+    <div class="calculator-wrapper">
+      <div class="calc-info">
+        <div class="badge">Wealth Estimator</div>
+        <h2>Estimate Your Mutual Fund Returns</h2>
+        <p>Mutual funds yield compounding returns. Test out potential growth and see the impact of time and discipline on your investments.</p>
+        
+        <div class="calc-visualizer">
+          <div class="visualizer-bar-group">
+            <div class="vis-label">Total Invested</div>
+            <div class="vis-bar-container">
+              <div class="vis-bar invested-bar" id="invested-bar" style="width: 50%;"></div>
+            </div>
+            <div class="vis-amount" id="vis-invested-amount">₹5,00,000</div>
+          </div>
+          
+          <div class="visualizer-bar-group">
+            <div class="vis-label">Est. Returns</div>
+            <div class="vis-bar-container">
+              <div class="vis-bar returns-bar" id="returns-bar" style="width: 50%;"></div>
+            </div>
+            <div class="vis-amount text-gradient" id="vis-returns-amount">₹3,40,000</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-card">
+        <div class="calc-toggle">
+          <button class="toggle-btn active" id="btn-sip">SIP (Monthly)</button>
+          <button class="toggle-btn" id="btn-lump">Lump Sum</button>
+        </div>
+
+        <div class="calc-inputs">
+          <div class="input-group">
+            <div class="input-header">
+              <label for="amount-input" id="lbl-amount">Monthly Investment</label>
+              <span class="value-display" id="val-amount">₹5,000</span>
+            </div>
+            <input type="range" id="amount-input" min="500" max="100000" step="500" value="5000" class="slider-input">
+          </div>
+
+          <div class="input-group">
+            <div class="input-header">
+              <label for="rate-input">Expected Return Rate (p.a.)</label>
+              <span class="value-display" id="val-rate">12%</span>
+            </div>
+            <input type="range" id="rate-input" min="1" max="30" step="0.5" value="12" class="slider-input">
+          </div>
+
+          <div class="input-group">
+            <div class="input-header">
+              <label for="years-input">Time Period</label>
+              <span class="value-display" id="val-years">10 Years</span>
+            </div>
+            <input type="range" id="years-input" min="1" max="40" step="1" value="10" class="slider-input">
+          </div>
+        </div>
+
+        <div class="calc-results">
+          <div class="result-row">
+            <span>Invested Amount</span>
+            <span class="result-value" id="res-invested">₹6,00,000</span>
+          </div>
+          <div class="result-row">
+            <span>Est. Returns</span>
+            <span class="result-value" id="res-returns">₹5,20,109</span>
+          </div>
+          <div class="result-row total-row">
+            <span>Total Value</span>
+            <span class="result-value text-gradient" id="res-total">₹11,20,109</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section class="download" id="download">
+    <div class="download-container">
+      <h2>Get Started with MF Tracker</h2>
+      <p>Securely track and analyze your mutual fund investments today. Click below to download directly from the Indus Appstore or load the APK manually.</p>
+      
+      <div class="download-buttons">
+        <a href="https://www.indusappstore.com/" target="_blank" class="download-badge-indus indus-large">
+          <div class="indus-icon">
+            <i class="fas fa-download"></i>
+          </div>
+          <div class="indus-text">
+            <span class="indus-sub">DOWNLOAD FROM</span>
+            <span class="indus-main">Indus Appstore</span>
+          </div>
+        </a>
+        <a href="https://github.com/SoftwareTestingPro/mftracker/releases" target="_blank" class="btn btn-secondary btn-lg">
+          <i class="fab fa-android"></i> Download APK File
+        </a>
+      </div>
+
+      <div class="qr-container">
+        <!-- Render a stylish border/placeholder for QR code scan to download -->
+        <div class="qr-code">
+          <i class="fas fa-qrcode"></i>
+        </div>
+        <p>Scan to download app directly on Android</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">
+          <img src="../favicon.png" alt="MF Tracker Logo">
+          <span>MF Tracker</span>
+        </a>
+        <p>Committed to providing anonymous, serverless portfolio analytics with zero tracking.</p>
+      </div>
+      <div class="footer-links">
+        <div class="link-col">
+          <h4>Legal</h4>
+          <a href="../PRIVACY_POLICY.md" target="_blank">Privacy Policy</a>
+          <a href="../TERMS_OF_SERVICE.md" target="_blank">Terms of Service</a>
+        </div>
+        <div class="link-col">
+          <h4>Project</h4>
+          <a href="https://github.com/SoftwareTestingPro/mftracker" target="_blank">Source Code</a>
+          <a href="https://github.com/SoftwareTestingPro/mftracker/issues" target="_blank">Report Issues</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SoftwareTestingPro. All rights reserved. Created with security first.</p>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="app.js"></script>
+</body>
+</html>
